@@ -15,7 +15,6 @@ module PfifXmlHelper
   private
   
   def get_xml_content xml_file_or_url
-    puts "get_xml_content: #{xml_file_or_url}" #DEBUG
     if xml_file_or_url.include? 'http://'
       return get_xml_content_via_http xml_file_or_url
     elsif File.exist? xml_file_or_url
@@ -26,12 +25,10 @@ module PfifXmlHelper
   end
   
   def get_xml_content_via_file xml_file
-    puts "get_xml_content_via_file: #{xml_file}" #DEBUG
     File.open(xml_file, 'r').read
   end  
   
   def get_xml_content_via_http xml_url
-    puts "get_xml_content_via_http: #{xml_url}" #DEBUG
     url = URI.parse xml_url
     res = Net::HTTP.start(url.host, url.port) do |http|
       http.get url.path
