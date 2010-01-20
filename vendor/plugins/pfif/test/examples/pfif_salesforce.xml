@@ -1,7 +1,6 @@
 <pfif:pfif xmlns:pfif="http://zesty.ca/pfif/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://zesty.ca/pfif/1.1
-                               http://zesty.ca/pfif/1.1/pfif-1.1.xsd">
+           xsi:schemaLocation="http://zesty.ca/pfif/1.1 http://zesty.ca/pfif/1.1/pfif-1.1.xsd">
   <pfif:person>
     <pfif:person_record_id>salesforce.com/a0030000001TRYR</pfif:person_record_id>
     <pfif:entry_date>2005-09-03T09:21:12Z</pfif:entry_date>
