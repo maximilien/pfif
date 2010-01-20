@@ -25,7 +25,7 @@ module PfifDbHelper
   end
   
   def create_pfif_person person
-    PfifPersonData.create :pfif_person_record_id => "#{domain_root_url}/person#{person.id}",
+    PfifPersonData.create :pfif_person_record_id => "#{domain_root_url}/person.#{person.id}",
                           :pfif_entry_date => "#{person.entry_date.strftime(fmt='%Y-%m-%dT%H-%M-%SZ')}",
       :pfif_author_name => person.author_name,
       :pfif_author_email => person.author_email,
@@ -46,7 +46,7 @@ module PfifDbHelper
   end
   
   def create_pfif_note note
-    PfifNoteData.create :pfif_note_record_id => "#{domain_root_url}/note#{note.id}",
+    PfifNoteData.create :pfif_note_record_id => "#{domain_root_url}/note.#{note.id}",
       :pfif_entry_date => "#{note.entry_date.strftime(fmt='%Y-%m-%dT%H-%M-%SZ')}",
       :pfif_author_name => note.author_name,
       :pfif_author_email => note.author_email,
