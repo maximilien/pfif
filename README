@@ -2,8 +2,12 @@
 
 pfif is a Ruby plugin to allow easy parsing and DB to XML generation of PFIF standard: http://zesty.ca/pfif/1.1/
 
+== License
+
+Released under the MIT license.  
+
+See LICENSE file or here: http://goo.gl/s9uhf
+
 == Copyright
 
-(C) E. M. Maximilien from IBM Research - Almaden
-http://maximilien.org
-maxim@us.ibm.com
+(C) 2011 - IBM Corporation
